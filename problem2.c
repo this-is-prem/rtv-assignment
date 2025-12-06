@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-int att[30],j,absent;
+int att[31],j,absent;
 float percentage;
 printf("enter the attendance for 30 days (1 = present, 0 = absent) :\n");
 for(int i=0;i<30;i++){

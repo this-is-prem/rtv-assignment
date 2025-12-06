@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-int fan,light,ac,refrigerator,totalUnits,estimatedbills = 0;
+int fan,light,ac,refrigerator,totalUnits =0 ,estimatedbills = 0;
 printf("enter usage hours for all appliances of 30 days :");
 printf("\nFAN :");
 scanf("%d",&fan);
