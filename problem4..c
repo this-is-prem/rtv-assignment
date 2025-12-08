@@ -1,8 +1,8 @@
 #include<stdio.h>
 union num {
 
-int adhaar;
-int passport;
+long int adhaar;
+char passport[20];
 
 };
 int main(){
@@ -14,18 +14,21 @@ switch(option){
 case 1:
     printf("enter adhaar number : ");
     scanf("%d",&n1.adhaar);
+    printf("\n STORED ADHAAR NUM = %lu",n1.adhaar);
     break;
 case 2:
     printf("enter passport number :");
-    scanf("%d",&n1.passport);
+    scanf("%s",n1.passport);
+    printf("\nSTORED PASSPORT NUM = %s",n1.passport);
     break;
 default:
     printf("enter valid option");
-
+    return 1;
 
 }
-printf("adhaar = %d",n1.adhaar);
-printf("\npassport = %d",n1.passport);
-
+printf("\nSize of union = %d",sizeof(n1));
+printf("\nadhaar = %d",sizeof(n1.adhaar));
+printf("\npassport = %d",sizeof(n1.passport));
+printf("\n THE SIZE OF THE UNINON IS THE SIZE OF THE LARGEST ELEMENT ");
 return 0;
 }
